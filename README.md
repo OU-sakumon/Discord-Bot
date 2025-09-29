@@ -58,20 +58,21 @@
 - **主要技術**:
   - Discord.py (Discord Bot Framework)
   - Google Spreadsheet API (データ管理)
-  - Koyebによるクラウドホスティング
-  - UptimeRobotによる常時起動監視
+  - Koyeb (クラウドホスティング)
+  - UptimeRobot (常時起動監視)
 
 ## 📊 システム構成
 
 ```mermaid
 graph TD
-    A[Discord Bot] --> B[Discord Server]
-    B --> C[各種管理機能]
-    C --> D[Google Spreadsheet API]
-    D --> E[非公開スプレッドシート]
-    E --> F[Google Apps Script]
-    F --> G[公開スプレッドシート]
-    H[Koyeb + UptimeRobot] --> A
+    A["Discord Bot"] --> B["Discord Server"]
+    B --> C["各種管理機能<br/>経費・投票・メンバー管理"]
+    C --> D["API"]
+    D --> E["非公開スプレッドシート"]
+    E --> F["Google Apps Script"]
+    F --> G["公開スプレッドシート"]
+    H["Koyeb<br/>ホスティング"] --> A
+    I["UptimeRobot<br/>Bot常時起動"] --> H
 ```
 
 ## 🎯 プロジェクトの目標
